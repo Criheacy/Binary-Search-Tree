@@ -116,7 +116,7 @@ const draft = (root: Node) => {
   positionedRoot.delta -= pushDownDelta(positionedRoot);
   pushDownDelta(positionedRoot);
 
-  return flattenWithChildren(positionedRoot);
+  return positionedRoot;
 };
 
 export default draft;
